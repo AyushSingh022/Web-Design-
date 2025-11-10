@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Singh Portfolio</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background-color: #333;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1 000;
+        }
+
+        nav .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav .nav-links li a {
+            color: white;
+            transition: 0.3s;
+        }
+
+        nav .nav-links li a:hover {
+            color: #ff6347;
+        }
+
+        nav .logo {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        section {
+            padding: 80px 50px;
+            text-align: center;
+        }
+
+        .home {
+            background-color: #f4f4f4;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .home h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .home p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 10px 25px;
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #e5533d;
+        }
+
+        .home-photo {
+            margin-top: 20px;
+        }
+
+        .home-photo img {
+            width: 400px;
+            height: auto ;
+            border-radius: 100%; 
+            border: 3px solid #757271; 
+        }
+
+        .about {
+            background-color: #fff;
+        }
+
+        .about p {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .projects {
+            background-color: #f4f4f4;
+        }
+
+        .project-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .project-card {
+            background-color: white;
+            padding: 20px;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .skills {
+            background-color: #fff;
+        }
+
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills li {
+            margin: 10px 0;
+        }
+
+        .contact {
+            background-color: #f4f4f4;
+        }
+
+        .contact form {
+            max-width: 500px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact input, .contact textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact button {
+            padding: 10px;
+            border: none;
+            background-color: #ff6347;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background-color: #e5533d;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Ayush Singh</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="home">
+        <h1>Hello, I'm Ayush Singh</h1>
+        <p>Java Developer  | Java, Android, Web</p>
+        <a href="#contact" class="btn">Hire Me</a>
+
+        <div class="home-photo">
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I am a passionate developer with experience in Java, Android, and Web development. I love creating projects that solve real-world problems and improve user experience.</p>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <h3>Video Editing App</h3>
+                <p>An Android app to edit videos with trim, rotate, add music, and more features.</p>
+            </div>
+            <div class="project-card">
+                <h3>Payroll Application</h3>
+                <p>JavaFX and MySQL based Payroll Application to manage employee salaries efficiently.</p>
+            </div>
+            <div class="project-card">
+                <h3>Group Expense App</h3>
+                <p>An Android application to track shared expenses among friends.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <ul>
+            <li>Java / JavaFX / Android Studio</li>
+            <li>HTML / CSS / JavaScript</li>
+            <li>Database: MySQL</li>
+            <li>Version Control: Git & GitHub</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Ayush Singh. All rights reserved.</p>
+    </footer>
+</body>
+</html>
